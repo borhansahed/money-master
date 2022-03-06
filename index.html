@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONEY BANK</title>
+    <!-- vanilla css /////////////////// -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap /////////////////////////// -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+</head>
+<body>
+    <main>
+        <h1 class="text-bolder fs-f1 text-center my-5">Money <span id="text-black ">Bank</span> </h1>
+      
+        <section>
+            <div class="container  ">
+                <div class="row ">
+
+                    <!-- image part --------- -->
+                  <div id="images" class="col-6 col-sm-12 ">
+                    <img class="money-photo" src="./images/paisa.jpg" alt="">
+                  </div>
+                  <!-- calcultion part -----=-===-== -->
+                  <div id="calculate-income"  class="col-6 col-sm-12 ">
+                      <div class="d-flex justify-content-center " >
+                          <div >
+                            <h5 class="text-center mt-5 fw-bold">Income</h5>
+                            <p class="text-center mt-3 ">income <input  id="income-money" class="ms-2" type="text" value=""></p>
+                            
+
+                            <h5 class="text-center mt-4 fw-bold">Expenses</h5>
+                            <p class="text-center text-muted  mt-3" >Food:<input  id="food" class="ms-4"type="text" value=""></p>
+                            <p class="text-center mt-3">Rent: <input id="rent"class="ms-4"type="text" value=""></p>
+                            <p class="text-center mt-3">Clothes: <input id="clothes"class="ms-1"type="text" value=""></p>
+                           <div class="button">
+                            <button id="calculate-button" class="btn btn-dark">Calculate</button>
+                           </div>
+                           <h5 class="fw-bold mt-3 ms-5">Total Expenses: $<span id="total-expenses">00</span> </h5>
+                           <h4 id="Balance" class="fw-bold mt-3 ">Balance: $<span id="balance-input">00</span></h4>
+                           <div class=" mt-4 d-flex justify-content-evenly align-items-center" >
+                               <p class="pt-3">Save:</p>
+                               <input  class="w-25 " type="text" name="sahed" id="save-input">
+                               <p class="pt-3">%</p>
+                               <button id="save-button" class="btn btn-dark px-3">Save</button>
+                           </div>
+                           <h5 class="ms-5 fw-bolder mt-2">Savings Amount: $<span id="save-amount">00</span></h5>
+                           <h4 class="ms-4 fw-bold">Remaining Balance: $<span id="balance-remaining">00</span></h4>
+                           
+                             </div>
+                             <div>
+                               
+                             </div>
+                      </div>
+                   </div>
+              </div>
+        </section>
+    </main>
+    <!-- javascrpit ///////////////////// -->
+    <script src="app.js"></script>
+</body>
+</html>
