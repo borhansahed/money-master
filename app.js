@@ -11,9 +11,6 @@ const balanceinput = document.getElementById('balance-input');
 
 
 
-
-
-
 document.getElementById('calculate-button').addEventListener('click' , function(){
 //    income input field 
 
@@ -32,7 +29,6 @@ document.getElementById('calculate-button').addEventListener('click' , function(
     }
     
 
-        
   
 
 // / Expenses money /////////
@@ -66,11 +62,10 @@ if ( isNaN(foodinputNumber)){
 if ( isNaN(rentinputNumber)){
      const result = alert("DON'T THOUGHT YOU ARE CLEVER !!");
      return result;
-      
+    }  
     
    
-    }
-
+    
 
  if( rentinputNumber <= 0 ){
       return  alert('FIRST MAKE YOUR OWN HOME ! THEN STAY WITHOUT RENT ! S0,UPDATE YOUR PROPER RENT EXPENSE !!');}
